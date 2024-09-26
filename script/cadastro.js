@@ -7,6 +7,30 @@ async function cadastroUsuario(){
     let cpf_cnpj = document.getElementById('cpf_cnpj').value
     let birthday = document.getElementById('birthday').value
 
+    if(!name){
+        alert("É necessário inserir seu Nome")
+        return;
+    }
+
+    if(!cpf_cnpj){
+        alert("É necessario inserir um CPF ou CNPJ")
+        return;
+    }
+
+    if(!email){
+        alert("É necessário inserir um Email")
+        return;
+    }
+
+    if(!password){
+        alert("É necessário inserir a sua Senha")
+        return;
+    }
+
+    if(!birthday){
+        alert("Insira sua Data de Nascimento")
+    }
+
     if (!document.getElementById('terms').checked) {
         alert("Você precisa aceitar os termos para prosseguir.");
         return;
