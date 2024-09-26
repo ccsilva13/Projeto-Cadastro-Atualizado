@@ -4,18 +4,6 @@ async function loginUsuario() {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
 
-    
-    if (!email) {
-        alert("É necessário inserir um Email");
-        return;
-    }
-
-    if (!password) {
-        alert("É necessário inserir a sua Senha");
-        return;
-    }
-
-    
     let api = await fetch(url, {
         method: "POST",
         body: JSON.stringify({
